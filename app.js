@@ -13,6 +13,7 @@ function callWeather(city){
             // If the city is not found, display the error message
             result.innerHTML = "Invalid City Name! Please correct it, Thanks...";
             document.querySelector(".weatherInfo").style.display = "block";
+            document.querySelector(".weatherInfo").style.color = "red";
         } else {
             // If city is found, display the weather data
             result.innerHTML = ""; // Clear the div
@@ -27,6 +28,7 @@ function callWeather(city){
 
             // Show the weather info once data is loaded
             document.querySelector(".weatherInfo").style.display = "block";
+            document.querySelector(".weatherInfo").style.color = "#fff";
         }
     })
     .catch((err) => {
