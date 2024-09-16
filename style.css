@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle at top, #89cff0, #0072ff, #0f1f58);
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+.app-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.app-header h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin: 0;
+}
+
+.app-header p {
+    font-size: 1.1rem;
+    color: #e0e0e0;
+}
+
+.search-container {
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 20px;
+}
+
+.searchInp {
+    width: 80%;
+    padding: 12px 15px;
+    border: none;
+    outline: none;
+    border-radius: 10px 0 0 10px;
+    font-size: 1rem;
+    color: #333;
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.searchInp::placeholder {
+    color: #999;
+}
+
+.searchBtn {
+    padding: 12px 25px;
+    background-color: #ffc800;
+    color: #fff;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 5px 10px rgba(255, 107, 107, 0.3);
+}
+
+.searchBtn:hover {
+    background-color: #f39d00;
+}
+
+.searchBtn:active {
+    transform: scale(0.98);
+    background-color: #f39d00;
+}
+
+.weatherInfo {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    text-align: left;
+    color: #fff;
+    width: 100%;
+    max-width: 400px;
+    font-size: 1.1rem;
+}
+
+.weatherInfo div {
+    margin: 10px 0;
+}
+
+#city-name, #weather-desc, #temp, #humidity, #wind {
+    font-weight: bold;
+    color: #f1f1f1;
+}
