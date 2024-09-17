@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
 
@@ -16,11 +17,17 @@
 
         <div class="search-container">
             <input type="text" class="searchInp" placeholder="Search city...">
-            <button class="searchBtn">Search</button>
+            <button class="searchBtn"><i class="fas fa-search"></i> Search</button>
         </div>
 
         <div class="weatherInfo">
             <!-- Weather information will be dynamically inserted here -->
+            <div id="city-name"></div>
+            <div id="weather-icon"></div>
+            <div id="weather-desc"></div>
+            <div id="temp"></div>
+            <div id="humidity"></div>
+            <div id="wind"></div>
         </div>
     </div>
 

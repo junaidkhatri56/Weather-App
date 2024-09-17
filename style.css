@@ -8,6 +8,8 @@ body {
     flex-direction: column;
     font-family: 'Poppins', sans-serif;
     background: radial-gradient(circle at top, #89cff0, #0072ff, #0f1f58);
+    color: #fff;
+    overflow: hidden;
 }
 
 .app-container {
@@ -16,6 +18,10 @@ body {
     align-items: center;
     width: 100%;
     max-width: 500px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    padding: 20px;
 }
 
 .app-header {
@@ -32,19 +38,18 @@ body {
 .app-header p {
     font-size: 1.1rem;
     color: #e0e0e0;
+    margin-bottom: 20px;
 }
 
 .search-container {
-    background: linear-gradient(145deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
-    padding: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 15px;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(10px);
     display: flex;
     align-items: center;
     width: 100%;
     max-width: 400px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
     margin-bottom: 20px;
 }
 
@@ -56,7 +61,7 @@ body {
     border-radius: 10px 0 0 10px;
     font-size: 1rem;
     color: #333;
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.8);
 }
 
 .searchInp::placeholder {
@@ -72,7 +77,12 @@ body {
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    box-shadow: 0 5px 10px rgba(255, 107, 107, 0.3);
+    display: flex;
+    align-items: center;
+}
+
+.searchBtn i {
+    margin-right: 5px;
 }
 
 .searchBtn:hover {
@@ -90,18 +100,44 @@ body {
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
-    text-align: left;
+    text-align: center;
     color: #fff;
     width: 100%;
     max-width: 400px;
     font-size: 1.1rem;
+    display: none;
 }
 
 .weatherInfo div {
     margin: 10px 0;
 }
 
-#city-name, #weather-desc, #temp, #humidity, #wind {
+#city-name {
+    font-size: 1.8rem;
     font-weight: bold;
+    text-transform: uppercase;
+}
+
+#weather-icon {
+    font-size: 3rem;
+}
+
+#weather-desc, #temp, #humidity, #wind {
+    font-size: 1.2rem;
     color: #f1f1f1;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.weatherInfo {
+    animation: fadeIn 1s ease-in-out;
 }
