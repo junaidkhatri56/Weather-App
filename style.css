@@ -141,3 +141,109 @@ body {
 .weatherInfo {
     animation: fadeIn 1s ease-in-out;
 }
+
+
+
+
+
+
+
+/* Responsive Media Queries for Mobile Devices */
+
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    .app-container {
+        width: 90%;
+        max-width: 400px;
+        padding: 15px;
+    }
+
+    .app-header h1 {
+        font-size: 2rem;
+    }
+
+    .app-header p {
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+
+    .search-container {
+        padding: 10px;
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .searchInp {
+        padding: 10px 12px;
+        font-size: 0.9rem;
+    }
+
+    .searchBtn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .weatherInfo {
+        padding: 15px;
+        max-width: 350px;
+        font-size: 1rem;
+    }
+
+    #city-name {
+        font-size: 1.5rem;
+    }
+
+    #weather-icon {
+        font-size: 2.5rem;
+    }
+
+    #weather-desc, #temp, #humidity, #wind {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .app-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .app-header p {
+        font-size: 0.9rem;
+    }
+
+    .search-container {
+        padding: 8px;
+        max-width: 300px;
+    }
+
+    .searchInp {
+        padding: 8px 10px;
+        font-size: 0.8rem;
+    }
+
+    .searchBtn {
+        padding: 8px 15px;
+        font-size: 0.8rem;
+    }
+
+    .weatherInfo {
+        padding: 10px;
+        max-width: 300px;
+        font-size: 0.9rem;
+    }
+
+    #city-name {
+        font-size: 1.3rem;
+    }
+
+    #weather-icon {
+        font-size: 2rem;
+    }
+
+    #weather-desc, #temp, #humidity, #wind {
+        font-size: 0.9rem;
+    }
+}
